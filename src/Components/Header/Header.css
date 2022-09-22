@@ -1,7 +1,8 @@
 header{
   height: 82vh;
-  padding-top: 7rem;
+  padding-top: 6.5rem;
   overflow: hidden;
+  /* margin: auto; */
 }
 
 .header__container{
@@ -15,8 +16,17 @@ header{
   gap: 7rem;
 }
 
+
 .header__container > div:nth-child(1){
   margin: 5rem 0 0 3rem;
+}
+
+.header__container > div > h1{
+   font-weight: 600;
+}
+
+.header__socials > a{
+  font-size:xx-large;
 }
 
 .me{
@@ -54,20 +64,6 @@ header{
 
 /* header */
 
-
-/* .me{
-  background: linear-gradient(var(--color-primary),transparent);
-  width: 22rem;
-  height: 30rem;
-  position: absolute;
-  left: calc(50% -11rem);
-  margin-top: 2.5rem;
-  border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 5rem 1.5rem 1.5rem 1.5rem;
-  border-radius: 50%;
-} */
-
 /* scroll down  */
 
 
@@ -84,7 +80,7 @@ header{
 
 @media screen and (max-width : 1180px){
   header{
-    height: 70vh;
+    height: 90vh;
     padding-top: 3rem;
     margin: auto;
     text-align: center;
@@ -98,6 +94,11 @@ header{
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .me{
+    height: 70%;
+    width: 70%;
+    margin: auto;
+  }
   .resume{
     display: flex;
     justify-content: center;
@@ -105,24 +106,34 @@ header{
   .header__socials{
     display: flex;
     justify-content: center;
+  }
+
+  .header__socials > a{
+    font-size:x-large;
   }
 
 }
 
 /* media queries for (small devices)  */
 
+
+
+
 @media screen and (max-width : 801px){
   header{
-    height: 68vh;
-    padding-top: 2rem;
+    height: 56vh;
+    padding-top: 1.3rem;
     text-align: center;
     margin: auto;
   }
+  .me{
+    display: none;
+  }
 
   .header__container{
-    text-align: center;
-    width: 85%;
     margin: auto;
+    text-align: left;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -136,53 +147,66 @@ header{
     justify-content: center;
   }
 
+  .header__socials > a{
+    font-size:x-large;
+  }
+
   .scroll__down{
     display: none;
   }
 }
-@media screen and (max-width : 401px){
+
+
+@media screen and (max-width : 400px){
   header{
-    height: 55vh;
-    margin: auto;
+    height: 62vh;
+    /* padding-top: 0.7rem; */
     text-align: center;
+    margin: auto;
+  }
+  
+}
+
+
+
+@media screen and (max-width : 360px){
+  header{
+    height: 48vh;
+    margin-top: 5rem;
+    /* text-align: center; */
     padding-top: 2rem;
   }
 
-  .header__container{
-    text-align: center;
-    width: 85%;
+  .header__container > div:nth-child(1){
+    margin-top: 5rem;
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  }
+
+  .header__container{
+    margin: auto;
+    text-align: left;
+
+  }
+  .me{
+    display: none;
   }
   .resume{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .header__socials{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+  }
+
+  .header__socials > a{
+    font-size:x-large;
   }
 
   .scroll__down{
     display: none;
   }
 }
-
-/* .container{
-  width: 75%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10rem;
-  margin-top: 7rem;
-}
-
-.text__container{
-  margin: 2rem 0 0 2rem;
-}
-
-.image__container{
-} */
-/* margin-top: -3.5rem; */

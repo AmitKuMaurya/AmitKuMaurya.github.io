@@ -13,7 +13,7 @@ function HeaderSocialMedia() {
     >
         <a href= "https://www.linkedin.com/in/amit-maurya-a494ba225/" target={"_blank"}><BsLinkedin/></a>
         <a href="https://github.com/AmitKuMaurya" target={"_blank"}><BsGithub/></a>
-        <a href="https://twitter.com" target={"_blank"}><BsTwitter/></a>
+        <a href="https://twitter.com/i_amitmaurya" target={"_blank"}><BsTwitter/></a>
     </div>
   )
 }

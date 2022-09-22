@@ -25,12 +25,12 @@ function Footer() {
           <a href="https://www.linkedin.com/in/amit-maurya-a494ba225/" target={"_blank"}>
             <AiFillLinkedin/>
           </a>
-          <a href="https://twitter.com">
+          <a href="https://twitter.com/i_amitmaurya" target={"_blank"}>
             <IoLogoTwitter/>
           </a>
         </div>
         
-        <div className='footer__copyright' target={"_blank"}>
+        <div className='footer__copyright' >
           <small> &copy; Amit Maurya. Feel free to copy no copyrights issues.</small>
 
         </div>

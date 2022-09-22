@@ -52,7 +52,7 @@
         width: 300px;
     }
     #about{
-        height: 56vh;
+        height: 67vh;
     }
   }
 
@@ -61,6 +61,15 @@
         width: 300px;
     }
     #about{
-        height: 56vh;
+        height: 65vh;
+    }
+  }
+
+  @media screen and (max-width : 360px){
+    .about__content {
+        width: 300px;
+    }
+    #about{
+        height: 70vh;
     }
   }

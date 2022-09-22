@@ -12,7 +12,6 @@ function Header() {
             <h5>Hello People, I am</h5>
             <h1>Amit Maurya</h1>
             <h5 className='text-light'> Full Stack MERN Developer</h5>
-
           <ResumeBtn/>
             <HeaderSocialMedia/>
 
