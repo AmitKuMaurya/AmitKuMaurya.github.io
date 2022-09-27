@@ -1,5 +1,5 @@
 import React from 'react'
-import Resume from "../../Resources/Amit_Maurya_Resume.pdf"
+import Resume from "../../Resources/AmitKumarMaurya.pdf"
 import "./Header.css"
 function ResumeBtn() {
   return (
