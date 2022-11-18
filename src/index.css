@@ -10,12 +10,19 @@
 }
 
 :root{
-  --color-bg : #FAED26;
-   --color-bg-varient : #30083f; /*46344E */
+  --color-bg : #FFFF;
+   --color-bg-varient : rgb(72, 4, 139); 
+  --color-primary : rgba(0, 0, 0, 0.751);
+  --color-primary-varient : rgba(0, 0, 0, 0.751);
+  --color-white : rgba(0, 0, 0, 0.751);
+  --color-light : rgba(128, 0, 128, 0.889);
+
+  /* --color-bg : #FAED26;
+   --color-bg-varient : #30083f; 
   --color-primary : #5A5560;
   --color-primary-varient : #9D8D8F;
   --color-white : rebeccapurple;
-  --color-light : #9B786F;
+  --color-light : #9B786F; */
 
   --transition: all 400ms ease;
 

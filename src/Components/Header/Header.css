@@ -1,6 +1,6 @@
 header{
   height: 82vh;
-  padding-top: 6.5rem;
+  padding-top: 7rem;
   overflow: hidden;
   /* margin: auto; */
 }
@@ -78,7 +78,7 @@ header{
 
 /* media queries for (medium devices)  */
 
-@media screen and (max-width : 1180px){
+@media screen and (max-width : 1024px){
   header{
     height: 90vh;
     padding-top: 3rem;
@@ -98,6 +98,7 @@ header{
     height: 70%;
     width: 70%;
     margin: auto;
+    margin-top: 3rem;
   }
   .resume{
     display: flex;
@@ -111,6 +112,9 @@ header{
   .header__socials > a{
     font-size:x-large;
   }
+  .scroll__down{
+    display: none;
+  }
 
 }
 
@@ -119,7 +123,7 @@ header{
 
 
 
-@media screen and (max-width : 801px){
+/* @media screen and (max-width : 801px){
   header{
     height: 56vh;
     padding-top: 1.3rem;
@@ -154,15 +158,15 @@ header{
   .scroll__down{
     display: none;
   }
-}
+} */
 
 
+/* padding-top: 0.7rem; */
 @media screen and (max-width : 400px){
   header{
-    height: 62vh;
-    /* padding-top: 0.7rem; */
     text-align: center;
     margin: auto;
+    /* margin-bottom: -30vh; */
   }
   
 }
@@ -171,24 +175,25 @@ header{
 
 @media screen and (max-width : 360px){
   header{
-    height: 48vh;
-    margin-top: 5rem;
-    /* text-align: center; */
+    height: 50vh;
+    /* padding-top: 5rem; */
+    text-align: center;
     padding-top: 2rem;
   }
 
-  .header__container > div:nth-child(1){
+  .header__container> div:first-child > h5{
     margin-top: 5rem;
+    color: pink;
     margin: auto;
   }
 
-  .header__container{
+  .header__container > div {
     margin: auto;
-    text-align: left;
+    /* text-align: left; */
 
   }
   .me{
-    display: none;
+    margin-top: 2rem;
   }
   .resume{
     display: flex;

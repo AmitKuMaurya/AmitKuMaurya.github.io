@@ -1,35 +1,114 @@
-nav{
-    background: rgba(0, 0, 0, 0.3);
-    width: max-content;
-    display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 0.8rem;
-    border-radius: 3rem;
-    backdrop-filter: blur(15px);
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
 }
 
-nav a{
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    color: var(--color-light);
-    font-size: 1.1rem;
+/* East Bay: #424874
+Moon Raker: 
+Ghost: #CACFD6 */
+
+
+:root {
+	--mainColor: rgb(102, 51, 153);
+	/* --mainColorLight: #71aa57; */
+	--secondaryColor: black;
+	--textColor: #CACFD6;
 }
 
-nav a:hover{
-    background: rgba(0, 0, 0, 0.3);
+.fixing{
+	position: sticky;
+	top: 0%;
+	z-index: 3;
 }
 
-nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+.header_n {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	height: 60px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
 }
+
+nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+.header_n .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+.header_n div,
+nav {
+	display: flex;
+	align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+	.header_n .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        /* z-index: 2; */
+	}
+
+	.header_n nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+		transform: translateY(-100vh);
+		z-index: 3;
+		/* position: fixed; */
+	}
+
+	.header_n .responsive_nav {
+		transform: none;
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
+
+/* .btn{
+	width:  max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition:  var(--transition);
+} */
