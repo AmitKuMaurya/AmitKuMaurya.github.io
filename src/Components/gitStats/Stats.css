@@ -1,5 +1,5 @@
 
-.container__calendar{
+.container__calendars{
     width: 80%;
     display: flex;
     margin: auto;
@@ -21,8 +21,8 @@
 } */
 
 @media screen and (max-width : 1024px){
-    .container__calendar{
-        width: 80%;
+    .container__calendars{
+        width: 90%;
         display: grid;
         margin: auto;
     }

@@ -11,10 +11,10 @@ Ghost: #CACFD6 */
 
 
 :root {
-	--mainColor: rgb(102, 51, 153);
+	--mainColor: rgb(163,167,228);
 	/* --mainColorLight: #71aa57; */
 	--secondaryColor: black;
-	--textColor: #CACFD6;
+	--textColor: #ffff;
 }
 
 .fixing{
